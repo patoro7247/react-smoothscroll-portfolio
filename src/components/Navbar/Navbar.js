@@ -4,15 +4,28 @@ import './Navbar.css'
 
 class Navbar extends Component {
     // People name things in react with capitalized letter
+    
+    //states whenever you click on something if its true or false
+    state = { clicked : false }
+    
+    // Whenever you click, alters clicked status to opposite value
+    handleClick = () => {
+        this.setState({ clicked: !this.state.clicked})
+    }
+
+    // If this is clicked, we add the class nav-menu active, or if you did not click on it, the class will be regular nav menu
+
     render() {
         return(
             <nav className="NavbarItems">
-                <h1 className="navbar-logo">React<i className="fab fa-react"></i></h1>
-                <div className="menu-icon">
-                    
+                <h1 className="navbar-logo"><i class="fa-solid fa-dragon"></i></h1>
+                <div className="menu-icon" onClick={this.handleClick}>
+                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
                 
-                <ul>
+
+                 
+                <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) =>  {
                         return (
                             <li key={index}> 
