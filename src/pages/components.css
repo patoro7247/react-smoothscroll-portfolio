@@ -1,0 +1,64 @@
+
+.homeImage {
+    object-fit: contain;
+    padding: 0px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+section div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 1em;
+}
+
+#homeContainer {
+    border: 0;
+}
+
+#aboutContainer {
+    background-color: rgb(41, 39, 38);
+    height:100%;
+    justify-content: flex-end;
+    border: 0;
+}
+
+.aboutTextContainer {
+    position: aboslute;
+    top: 0;
+    width: 65%;
+    height: 100%;
+}
+.aboutPanel {
+    object-fit: contain;
+    width:35%;
+    background : linear-gradient(90deg, rgb(0,0,0) 0%, rgb(102, 89, 83) 100%);
+}
+
+#projectsContainer {
+    background-color: rgb(41, 39, 38);
+    height:100%;
+    justify-content: flex-start;
+}
+.projectsPanel {
+    object-fit: contain;
+    width:35%;
+    background : linear-gradient(90deg, rgb(0,0,0) 0%, rgb(102, 89, 83) 100%);
+}
+
+.maindiv {
+    background-color: rgb(34, 34, 36);
+}
+
+h3 {
+    color: white;
+}

@@ -14,11 +14,12 @@ class Navbar extends Component {
     }
 
     // If this is clicked, we add the class nav-menu active, or if you did not click on it, the class will be regular nav menu
+    // <h1 className="navbar-logo"><i className="fa-solid fa-mountain"></i></h1>
 
     render() {
         return(
             <nav className="NavbarItems">
-                <h1 className="navbar-logo"><i class="fa-solid fa-dragon"></i></h1>
+                
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
