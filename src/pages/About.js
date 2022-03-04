@@ -1,21 +1,42 @@
 import React from 'react';
 import './components.css';
 
+import * as Scroll from 'react-scroll';
+
+import { Box }  from '@chakra-ui/react';
+
+
+
+let Link = Scroll.Link;
+
+// <Link to={'projectsContainer'} spy={true} smooth={true}>here</Link>.</p>
+
+
 const About = () => {
 
     return (
         <section id='aboutContainer'>
-           
-           <div className="aboutTextContainer">
-                <h3>What I'm about</h3>
-                <p>I'm a college student learning frontend and backend languages to learn the developer ways</p>
+            
+            <Box display="flex" flexDirection="row" alignItems="flex-start" gap="10vw">
 
-                <h3>Technologies</h3>
-                <p>I use python, javascript, ...</p>
-            </div>
-           
-            <img className="aboutPanel" src="/images/about_panel.jpg" />
+                <div className="aboutTextContainer">
+                    <h2>About Me</h2>
+                    <hr/> 
+                    <p>I'm a developer looking to learn and build </p>
                 
+                </div>    
+
+                <div className="SkillsContainer">
+                    <h2>Skills</h2>
+                    <hr/>
+                    <Box display="flex" flexDirection="row" >
+                        
+                    </Box>
+                </div>
+
+            </Box>
+
+
         </section>
     )
 };

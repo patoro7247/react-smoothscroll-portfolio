@@ -3,19 +3,23 @@ import { Main } from "./pages";
 
 
 
-//import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider } from '@chakra-ui/react';
+// Check out Chakra toast when user submits request
+
 
 import Navbar from "./components/Navbar/Navbar";
 
 
 function App() {
   return (
-    
-      <div className="App">
-        <Navbar />
-        <Main />
-      </div>
-    
+      <ChakraProvider>
+        <div className="App">
+          <div className="navbarHolder">
+            <Navbar />
+          </div>
+          <Main />
+        </div>
+      </ChakraProvider>
   );
 }
 
