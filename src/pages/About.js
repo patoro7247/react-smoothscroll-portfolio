@@ -1,13 +1,13 @@
 import React from 'react';
 import './components.css';
 
-import * as Scroll from 'react-scroll';
-
-import { Box, Text, Tag, TagLabel }  from '@chakra-ui/react';
 
 
+import { Box, Text, Tag,  }  from '@chakra-ui/react';
 
-let Link = Scroll.Link;
+
+
+
 
 // <Link to={'projectsContainer'} spy={true} smooth={true}>here</Link>.</p>
 
@@ -43,15 +43,15 @@ const About = () => {
                         <Box>
                             <Text color='white'>Languages</Text>
                             <Box display="flex" flexDirection="row" flexWrap="wrap" p="8px">
-                            {languagesList.map((name) => (
-                                    <Tag size="lg" m="4px">{name}</Tag>
+                            {languagesList.map((name, index) => (
+                                    <Tag key={index} size="lg" m="4px">{name}</Tag>
                                 ))}
                             </Box>
                         </Box>
                         <Box><Text color='white'>Technologies</Text>
                             <Box display="flex" flexDirection="row" flexWrap="wrap" p="8px">
-                                {technologiesList.map((name) => (
-                                    <Tag size="lg" m="4px">{name}</Tag>
+                                {technologiesList.map((name, index) => (
+                                    <Tag key={index} size="lg" m="4px">{name}</Tag>
                                 ))}
                             </Box>
                         </Box>

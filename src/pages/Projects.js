@@ -1,8 +1,7 @@
-import { getValue } from '@testing-library/user-event/dist/utils';
+
 import React from 'react';
 import { Image,
     Box,
-    Center
 } from '@chakra-ui/react';
 //import { CardExample } from './CardExample.js';
 
@@ -41,7 +40,7 @@ function CreateBox(props) {
     return (
         projectList.map((item,index) => {
             return (
-                <a href={item.projectLink} key={index} target="_blank">
+                <a href={item.projectLink} key={index} target="_blank" rel="noreferrer">
                     <Box w='sm' borderWidth='1px' borderRadius='lg' overflow='hidden' bgColor='#B7B5B3' h='sm'>
                         <Image src={item.src} alt='projectImage' />
                         <Box p='6'>
