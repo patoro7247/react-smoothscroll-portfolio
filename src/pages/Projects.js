@@ -2,13 +2,7 @@ import { getValue } from '@testing-library/user-event/dist/utils';
 import React from 'react';
 import { Image,
     Box,
-    Center,
-    Heading,
-    Text,
-    Stack,
-    Avatar,
-    useColorModeValue,
-
+    Center
 } from '@chakra-ui/react';
 //import { CardExample } from './CardExample.js';
 
@@ -68,38 +62,15 @@ const Projects = () => {
     return (
         
         <section id='projectsContainer'>
-            <div className='headerPostsContainer'>
-                <h2>Projects</h2>
-                <hr/> 
-                <div className='posts'>
-                    <CreateBox />
-                                            {/*
-                                                    {projectList.map((item, index) => {
-                                                        return (
-                                                            <a href={item.projectLink} key={index} target="_blank">
-                                                                <div className='individualPost'>
-
-                                                                    <div className='postTitleDescription'>
-                                                                        <h3>{item.projectName}</h3>
-                                                                        <p>{item.projectDescription}</p>
-                                                                    </div>
-                                                                    <div className='postImage'></div>
-                                                                       
-                                                                        <Image 
-                                                                            boxSize='150px'
-                                                                            objectFit='cover'
-                                                                            src={item.src}
-                                                                            alt='Project Image'
-                                                                        />
-
-                                                                </div>
-                                                            </a>
-                                                        )
-                                                    })}
-                                                */}
+        
+                <div className='headerPostsContainer'>
+                    <h2>Projects</h2>
+                    <hr/> 
+                    <div className='posts'>
+                        <CreateBox />
+                    </div>
                 </div>
-            </div>
-
+           
 
 
             

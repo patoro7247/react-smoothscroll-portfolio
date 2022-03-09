@@ -3,7 +3,7 @@ import './components.css';
 
 import * as Scroll from 'react-scroll';
 
-import { Box }  from '@chakra-ui/react';
+import { Box, Text, Tag, TagLabel }  from '@chakra-ui/react';
 
 
 
@@ -13,24 +13,48 @@ let Link = Scroll.Link;
 
 
 const About = () => {
+    const languagesList = [ 'Javascript', 'Python'];
+    const technologiesList = ['Express', 'Git', 'Node', 'HTML/CSS',];
 
     return (
         <section id='aboutContainer'>
-            
-            <Box display="flex" flexDirection="row" alignItems="flex-start" gap="10vw">
+
+            <Box display="flex" flexDirection="row" alignItems="flex-start" gap="5vw" w="60vw">
 
                 <div className="aboutTextContainer">
                     <h2>About Me</h2>
                     <hr/> 
-                    <p>I'm a developer looking to learn and build </p>
+                    <Box>
+                        <Text color='white' fontSize="1rem">
+                            I'm a college student that's been studying Computer Science at Palomar College since 2019, this Spring I'll be receiving
+
+                            I'm a developer building projects with javascript and picking up new technologies like react, node, express, chakraUI and others.
+                            
+                        </Text>
+                        
+                    </Box>
                 
                 </div>    
 
                 <div className="SkillsContainer">
                     <h2>Skills</h2>
                     <hr/>
-                    <Box display="flex" flexDirection="row" >
-                        
+                    <Box display="flex" flexDirection="row" alignItems="flex-start" gap="1vw" p="0">
+                        <Box>
+                            <Text color='white'>Languages</Text>
+                            <Box display="flex" flexDirection="row" flexWrap="wrap" p="8px">
+                            {languagesList.map((name) => (
+                                    <Tag size="lg" m="4px">{name}</Tag>
+                                ))}
+                            </Box>
+                        </Box>
+                        <Box><Text color='white'>Technologies</Text>
+                            <Box display="flex" flexDirection="row" flexWrap="wrap" p="8px">
+                                {technologiesList.map((name) => (
+                                    <Tag size="lg" m="4px">{name}</Tag>
+                                ))}
+                            </Box>
+                        </Box>
                     </Box>
                 </div>
 
