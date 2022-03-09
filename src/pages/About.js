@@ -1,16 +1,8 @@
 import React from 'react';
 import './components.css';
-
-
-
 import { Box, Text, Tag,  }  from '@chakra-ui/react';
 
-
-
-
-
 // <Link to={'projectsContainer'} spy={true} smooth={true}>here</Link>.</p>
-
 
 const About = () => {
     const languagesList = [ 'Javascript', 'Python'];

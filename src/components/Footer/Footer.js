@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './Footer.css'
-import { Image,
+import { 
     Box,
     Center,
-    Heading,
     Text,
 } from '@chakra-ui/react';
 
