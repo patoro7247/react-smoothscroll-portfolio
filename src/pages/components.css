@@ -49,10 +49,10 @@ section div {
     position: relative;
     text-align: center;
     color: white;
-    object-fit: cover;
-    max-height: auto !important;
+    object-fit: contain;
+    max-height: 100%;
     padding: 0;
-    height: auto;
+    height: inherit;
     
 }
 

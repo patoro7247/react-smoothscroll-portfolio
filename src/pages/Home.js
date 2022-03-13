@@ -1,14 +1,26 @@
 import React from 'react';
 import './components.css';
 
+import { Image } from '@chakra-ui/react'
 
 const Home = () => {
 
     return (
         <section id='homeContainer'>
             <div className="homeImageContainer">
-                <img className="homeImage" src="/images/updated_home.png" alt='home'/>
-                 
+                
+                {/* <img className="homeImage" src="/images/updated_home.png" alt='home'/> */}
+                <Image 
+                src="/images/updated_home.png"
+                alt="home"
+                objectFit="contain !important"
+                overflow="hidden"
+                maxHeight="100%"
+                maxWidth="100%"
+                height="inherit"
+                />
+
+
                 <div className="homeImageContainerText">
                     I'm a developer currently studying Computer Science at Palomar College
                     <div className="textIcons">
