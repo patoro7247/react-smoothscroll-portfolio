@@ -19,7 +19,7 @@ function CreateBox(props) {
         {
             projectName : 'Graffiti and Crime Correlation Map',
             projectDescription : "This project visualizes the occurrences of graffiti reportings in comparison with hate crimes reported in the San Diego County area",
-            projectLink : 'https://github.com/patoro7247/SpotifyAPIPythonProject',
+            projectLink : 'https://github.com/patoro7247/crime-graffiti-map',
             src: 'images/projectThumbnails/crimegraffitmap.png',
         },
         {
