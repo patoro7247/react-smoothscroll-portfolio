@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-smoothscroll-portfolio/static/css/main.6396ccbd.css",
+    "main.js": "/react-smoothscroll-portfolio/static/js/main.56c83694.js",
+    "index.html": "/react-smoothscroll-portfolio/index.html",
+    "main.6396ccbd.css.map": "/react-smoothscroll-portfolio/static/css/main.6396ccbd.css.map",
+    "main.56c83694.js.map": "/react-smoothscroll-portfolio/static/js/main.56c83694.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6396ccbd.css",
+    "static/js/main.56c83694.js"
+  ]
+}
