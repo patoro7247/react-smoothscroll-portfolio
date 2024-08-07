@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-smoothscroll-portfolio/static/css/main.6396ccbd.css",
-    "main.js": "/react-smoothscroll-portfolio/static/js/main.f26234c3.js",
+    "main.js": "/react-smoothscroll-portfolio/static/js/main.c6ef2646.js",
     "index.html": "/react-smoothscroll-portfolio/index.html",
     "main.6396ccbd.css.map": "/react-smoothscroll-portfolio/static/css/main.6396ccbd.css.map",
-    "main.f26234c3.js.map": "/react-smoothscroll-portfolio/static/js/main.f26234c3.js.map"
+    "main.c6ef2646.js.map": "/react-smoothscroll-portfolio/static/js/main.c6ef2646.js.map"
   },
   "entrypoints": [
     "static/css/main.6396ccbd.css",
-    "static/js/main.f26234c3.js"
+    "static/js/main.c6ef2646.js"
   ]
 }
