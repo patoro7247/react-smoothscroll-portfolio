@@ -11,7 +11,7 @@ const Home = () => {
                 
                 {/* <img className="homeImage" src="/images/updated_home.png" alt='home'/> */}
                 <Image 
-                src="/images/updated_home.png"
+                src="images/updated_home.png"
                 alt="home"
                 objectFit="contain !important"
                 overflow="hidden"
